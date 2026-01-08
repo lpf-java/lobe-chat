@@ -29,7 +29,7 @@ const DallE = memo<BuiltinRenderProps<DallEImageItem[]>>(({ content, messageId }
     <Flexbox gap={16}>
       {/* 没想好工具条的作用 */}
       {/*<ToolBar content={content} messageId={messageId} />*/}
-      <PreviewGroup
+      <PreviewGroup 
         preview={{
           // 切换图片时设置
           onChange: (current: number) => {
