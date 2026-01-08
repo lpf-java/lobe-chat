@@ -43,8 +43,8 @@ const DallE = memo<BuiltinRenderProps<DallEImageItem[]>>(({ content, messageId }
          // toolbarAddon: <ActionIcon color={'#fff'} icon={Download} onClick={handleDownload} />,
        // }}
      // >
-        <GalleyGrid items={content.map((c) => ({ ...c, messageId }))} renderItem={ImageItem} />
-      </PreviewGroup>
+        //<GalleyGrid items={content.map((c) => ({ ...c, messageId }))} renderItem={ImageItem} />
+      //</PreviewGroup>
     </Flexbox>
   );
 });
