@@ -11,19 +11,6 @@ import GalleyGrid from './GalleyGrid';
 import ImageItem from './Item';
 
 const DallE = memo<BuiltinRenderProps<DallEImageItem[]>>(({ content, messageId }) => {
-  const currentRef = useRef(0);
-
-  const handleDownload = async () => {
-    // 1. Retrieve the blob URL of an image by its imageId
-    const id = content[currentRef.current]?.imageId;
-    if (!id) return;
-    const { url, name } = await fileService.getFile(id);
-    // 2. Download the image
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = name; // 设置下载的文件名
-    link.click();
-  };
 
   return null;
 });
