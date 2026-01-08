@@ -11,7 +11,8 @@ import GalleyGrid from './GalleyGrid';
 import ImageItem from './Item';
 
 const DallE = memo<BuiltinRenderProps<DallEImageItem[]>>(({ content, messageId }) => {
-
+  console.log(content);
+  console.log(messageId)
   return null;
 });
 
